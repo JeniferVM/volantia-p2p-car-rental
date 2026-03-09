@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚗 Volantia — Plataforma P2P de Renta de Vehículos
 
-## Getting Started
+Volantia es una plataforma peer-to-peer que conecta a propietarios de autos con personas que necesitan rentar un vehículo. Desarrollada en equipo como proyecto final del bootcamp Henry, con arquitectura fullstack y flujo de pago real integrado.
 
-First, run the development server:
+![Tech Stack](https://img.shields.io/badge/Next.js-15-black?style=flat-square&logo=nextdotjs)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=flat-square&logo=typescript)
+![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3-38bdf8?style=flat-square&logo=tailwindcss)
+![Auth0](https://img.shields.io/badge/Auth0-autenticación-eb5424?style=flat-square&logo=auth0)
+![Mercado Pago](https://img.shields.io/badge/Mercado_Pago-pagos-009ee3?style=flat-square)
+
+[![Demo](https://img.shields.io/badge/Ver_demo-live-brightgreen?style=flat-square)](https://front-pf-henry.vercel.app)
+
+---
+
+## ✨ Funcionalidades
+
+- 🔍 Catálogo de vehículos con filtrado por transmisión, combustible, asientos y precio
+- 🚘 Vista de detalle de vehículo con disponibilidad y reserva de fechas
+- 💳 Pasarela de pago completa con Mercado Pago (flujos de éxito, pendiente y fallo)
+- 👤 Autenticación con Auth0 y Google OAuth
+- 📋 Dashboard de usuario con historial de rentas y actividad
+- ⭐ Sistema de reseñas al finalizar una reservación
+- 🛡️ Protección de rutas para usuarios autenticados
+- 📸 Carga de imágenes de vehículos con Cloudinary
+- 📱 Diseño responsive con Tailwind CSS
+
+---
+
+## 🛠️ Stack Tecnológico
+
+| Área | Tecnología |
+|------|-----------|
+| Frontend | Next.js 15 (App Router), React, TypeScript |
+| Estilos | Tailwind CSS |
+| Autenticación | Auth0, Google OAuth |
+| Pagos | Mercado Pago |
+| Imágenes | Cloudinary |
+| Backend | Railway (API REST) |
+| Metodología | SCRUM |
+
+---
+
+## 👩‍💻 Mi rol como Frontend Developer
+
+Este fue un proyecto de equipo. Mis contribuciones principales fueron:
+
+- Diseño de la interfaz y prototipado en Figma
+- Renderizado y filtrado del catálogo de vehículos
+- Formulario para publicar nuevos vehículos
+- Integración completa de la pasarela de pagos con Mercado Pago (incluyendo páginas de éxito, pendiente y fallo)
+- Sistema de reseñas al finalizar una reservación
+- Documentación técnica del frontend
+- Gestión de tareas y coordinación del equipo con SCRUM
+
+---
+
+## 🚀 Instalación y uso local
+
+### Prerrequisitos
+- Node.js 18+
+- Cuenta en Auth0, Mercado Pago y Cloudinary para las variables de entorno
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Variables de entorno (`.env.local`)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```env
+NEXT_PUBLIC_API_URL=https://tu-backend.railway.app
+NEXT_PUBLIC_AUTH0_DOMAIN=tu-dominio.auth0.com
+NEXT_PUBLIC_AUTH0_CLIENT_ID=tu-client-id
+NEXT_PUBLIC_MP_PUBLIC_KEY=tu-clave-publica-mercadopago
+NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=tu-cloud-name
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 👥 Equipo
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Proyecto desarrollado en equipo durante el bootcamp Henry (oct–nov 2025).  
+**Jenifer Villanueva** — Frontend Developer  
+[LinkedIn](https://www.linkedin.com/in/jenifer-villanueva) · [GitHub](https://github.com/JeniferVM)
